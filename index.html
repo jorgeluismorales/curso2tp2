@@ -6,16 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-  <link rel="stylesheet" href="/css/mdb.min.css">
-  <script src="/js/mdb.min.js"></script>
+  <link rel="stylesheet" href="./css/mdb.min.css">
+  <script src="./js/mdb.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
   <link>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
 </head>
 
 <body>
@@ -25,10 +19,13 @@
         <div>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="/">Home</a>
+              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contacto</a>
+              <a class="nav-link" href="./services.html">Nuestros Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -36,7 +33,7 @@
     </nav>
 
     <div class="p-5 text-center bg-image shadow-1-strong" style="
-            background-image: url('/img/banner.jpg');
+            background-image: url('./img/banner.jpg');
             height: 400px;
           ">
       <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
@@ -58,7 +55,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="card">
-              <img src="/img/fuente-asus.jpg" class="card-img-top" alt="Fuente ASUS TUF 650B 80 Plus Bronze 650W" />
+              <img src="./img/fuente-asus.jpg" class="card-img-top" alt="Fuente ASUS TUF 650B 80 Plus Bronze 650W" />
               <div class="card-body">
                 <h5 class="card-title">Fuente ASUS TUF 650B 80 Plus Bronze 650W</h5>
                 <h6>$ 15.360</h6>
@@ -73,7 +70,7 @@
 
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="card">
-              <img src="/img/ssd-kingston.jpg" class="card-img-top" alt="SSD Kingston 120GB A400 500MB/s" />
+              <img src="./img/ssd-kingston.jpg" class="card-img-top" alt="SSD Kingston 120GB A400 500MB/s" />
               <div class="card-body">
                 <h5 class="card-title">SSD Kingston 120GB A400 500MB/s</h5>
                 <h6>$ 3.136</h6>
@@ -88,7 +85,7 @@
 
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="card">
-              <img src="/img/joystick-redragon.jpg" class="card-img-top" alt="Joystick Redragon Saturn G807 PC" />
+              <img src="./img/joystick-redragon.jpg" class="card-img-top" alt="Joystick Redragon Saturn G807 PC" />
               <div class="card-body">
                 <h5 class="card-title">Joystick Redragon Saturn G807 PC</h5>
                 <h6>$ 1.580</h6>
@@ -107,7 +104,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="card">
-              <img src="/img/monitor-lg.jpg" class="card-img-top" alt="Monitor LG LED 19'' 19M38A-B VGA" />
+              <img src="./img/monitor-lg.jpg" class="card-img-top" alt="Monitor LG LED 19'' 19M38A-B VGA" />
               <div class="card-body">
                 <h5 class="card-title">Monitor LG LED 19'' 19M38A-B VGA</h5>
                 <h6>$ 11.500</h6>
@@ -122,7 +119,7 @@
 
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="card">
-              <img src="/img/miband-xiaomi.jpg" class="card-img-top" alt="Smartwatch Xiaomi Mi Band 3 Negro" />
+              <img src="./img/miband-xiaomi.jpg" class="card-img-top" alt="Smartwatch Xiaomi Mi Band 3 Negro" />
               <div class="card-body">
                 <h5 class="card-title">Smartwatch Xiaomi Mi Band 3 Negro</h5>
                 <h6>$ 2.140</h6>
@@ -137,7 +134,8 @@
 
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="card">
-              <img src="/img/auricular-logitech.jpg" class="card-img-top" alt="Auricular Logitech H390 con microfono" />
+              <img src="./img/auricular-logitech.jpg" class="card-img-top"
+                alt="Auricular Logitech H390 con microfono" />
               <div class="card-body">
                 <h5 class="card-title">Auricular Logitech H390 con microfono</h5>
                 <h6>$ 3.320</h6>
@@ -154,20 +152,6 @@
     </div>
   </main>
 
-  <div id="map" style="height: 300px; width: 100%;"></div>
-
-  <script>
-
-    var map = L.map('map').setView([-29.415360947397243, -66.85969515877422], 20);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    L.marker([-29.415360947397243, -66.85969515877422]).addTo(map)
-      .bindPopup('Lorem ipsum dolor, sit amet consectetur adipisicing elit')
-      .openPopup();
-  </script>
 
   <footer class="text-center text-white" style="background-color: #f1f1f1;">
     <div class="container pt-4">
@@ -189,7 +173,7 @@
     </div>
 
     <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © Copyright 2021 - Todos los derechos reservados
+      Copyright © 2021 - Todos los derechos reservados
     </div>
 
   </footer>

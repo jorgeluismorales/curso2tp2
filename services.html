@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
+  <title>Services</title>
   <link rel="stylesheet" href="./css/mdb.min.css">
   <script src="./js/mdb.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
@@ -39,47 +39,34 @@
   </header>
 
   <div class="row" style="height: 65vh; width: 100%;">
-    <div class="col-md-6">
-      <div id="map" style="height: 400px; width: 100%;"></div>
+    <div class="col-6">
+        <div class="row" style="margin-top: 150px;">
+            <div class="col-6">
+                <ul>
+                    <li>Mantenimiento preventivo y correctivo</li>
+                    <li>Servicio Técnico para Empresas</li>
+                    <li>Administración de servidores</li>
+                    <li>Redes e infraestructura IT</li>
+                    <li>Soporte técnico para Hardware y Software</li>
+                </ul>
+            </div>
 
-      <script>
-
-        var map = L.map('map').setView([-29.415360947397243, -66.85969515877422], 20);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        L.marker([-29.415360947397243, -66.85969515877422]).addTo(map)
-          .bindPopup('Lorem ipsum dolor, sit amet consectetur adipisicing elit')
-          .openPopup();
-      </script>
+            <div class="col-6">
+                <ul>
+                    <li>Mantenimiento de impresoras</li>
+                    <li>Cableados estructurados</li>
+                    <li>Servicios de consultoría informática</li>
+                    <li>Laboratorio Técnico</li>
+                    <li>Centro de Soporte</li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <div class="col-md-6">
-      <form action="#" onsubmit="handleSubmit()" id="enviarMensaje">
-        <div class="form-outline mb-4">
-          <input type="text" id="nombre" class="form-control" required />
-          <label class="form-label" for="nombre">Nombre</label>
-        </div>
-
-
-        <div class="form-outline mb-4">
-          <input type="email" id="email" class="form-control" required />
-          <label class="form-label" for="email">Correo electronico</label>
-        </div>
-
-        <div class="form-outline mb-4">
-          <textarea class="form-control" id="mensaje" rows="4" required></textarea>
-          <label class="form-label" for="mensaje">Mensaje</label>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-block mb-4" onclick="verify()">Enviar</button>
-      </form>
+    <div class="col-6 d-flex align-items-center justify-content-center">
+        <img src="./img/tecnico.jpg" alt="imagen tecnico" style="width: 80%; height: 80%;">
     </div>
   </div>
 
-  <script src="./js/control.js"></script>
 
   <footer class="text-center text-white mb-0" style="background-color: #f1f1f1;">
     <div class="container pt-4">
